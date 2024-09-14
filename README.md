@@ -53,8 +53,8 @@ To run the project locally, follow these steps:
 
 2. **Navigate to the project directory:**
    ```bash
-  cd the-wild-oasis-website
-   
+  cd the-wild-oasis-website 
+
 3. **Install dependencies:**
    ```bash
    npm install
@@ -71,7 +71,6 @@ To run the project locally, follow these steps:
 6. **Open your browser and navigate to:**
    ```bash
    http://localhost:3000
-
    
 ## Acknowledgements
 
