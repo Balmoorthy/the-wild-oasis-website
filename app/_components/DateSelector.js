@@ -27,7 +27,8 @@ function DateSelector({ settings, cabin, bookedDates }) {
 
   const { regularPrice, discount } = cabin;
   const numNights = differenceInDays(displayRange.to, displayRange.from);
-  const cabinPrice = numNights * (regularPrice - discount);
+  const cabinPrice = Number(numNights * (regularPrice - discount));
+  console.log(numNights, cabinPrice);
 
   const { minBookingLength, maxBookingLength } = settings;
 
