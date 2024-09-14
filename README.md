@@ -51,9 +51,9 @@ To run the project locally, follow these steps:
    ```bash
    git clone https://github.com/Balmoorthy/the-wild-oasis-website.git
 
-2. **Navigate to the project directory:**
-  ```bash
-  cd the-wild-oasis-website 
+1. **Navigate to the project directory:**
+   ```bash
+   cd the-wild-oasis-website
 
 3. **Install dependencies:**
    ```bash
