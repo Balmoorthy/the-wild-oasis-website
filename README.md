@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Wild Oasis Hotel Booking Platform
 
-## Getting Started
+Welcome to the Wild Oasis Hotel Booking Platform! This is a modern web application designed to help potential and current guests explore, reserve, and manage their stay at Wild Oasis Hotel. Built with a full stack of cutting-edge technologies, this app provides a seamless user experience for all your booking needs.
 
-First, run the development server:
+## 🚀 Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Explore the Hotel:**
+  - Detailed information about Wild Oasis Hotel.
+  - Browse various cabins with descriptions, amenities, and images.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Cabin Information:**
+  - View cabin details, including availability and booked dates.
+  - Filter cabins based on maximum guest capacity.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- **Reservations:**
+  - Reserve a cabin for a specific date range.
+  - Reservations are initially marked as "unconfirmed" with payment to be made at the property.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- **Manage Reservations:**
+  - View all past and future reservations.
+  - Update or cancel existing reservations.
 
-## Learn More
+- **User Accounts & Profiles:**
+  - Sign up and log in to make reservations and manage bookings.
+  - Create and update user profiles for faster check-in.
 
-To learn more about Next.js, take a look at the following resources:
+## 🛠️ Technology Stack
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Frontend:**
+  - [Next.js](https://nextjs.org/)
+  - [TailwindCSS](https://tailwindcss.com/)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- **Authentication:**
+  - [NextAuth](https://next-auth.js.org/)
 
-## Deploy on Vercel
+- **State Management:**
+  - Context API
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Database:**
+  - [Supabase](https://supabase.com/)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## ⚙️ Future Updates
+
+In the near future, we plan to integrate an Express backend with MongoDB to enhance functionality and scalability.
+
+## 📦 Installation
+
+To run the project locally, follow these steps:
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/yourusername/wild-oasis-hotel-booking.git
