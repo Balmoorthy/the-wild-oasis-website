@@ -49,4 +49,30 @@ To run the project locally, follow these steps:
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/wild-oasis-hotel-booking.git
+   git clone https://github.com/Balmoorthy/the-wild-oasis-website.git
+
+2. **Navigate to the project directory:**
+   ```bash
+  cd the-wild-oasis-website
+   
+3. **Install dependencies:**
+   ```bash
+   npm install
+
+4. **Create a** .env.local **file with the following environment variables:**
+   ```bash
+   SUPABASE_URL=your-supabase-url
+   SUPABASE_KEY=your-supabase-key
+
+5. **Run the development server:**
+   ```bash
+   npm run dev
+   
+6. **Open your browser and navigate to:**
+   ```bash
+   http://localhost:3000
+
+   
+## Acknowledgements
+
+A huge thank you to **Jonas Schmedtmann** for the fantastic Udemy course that guided me through building this project. Your teaching has been invaluable in applying and expanding my skills!
