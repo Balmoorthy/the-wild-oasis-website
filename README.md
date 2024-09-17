@@ -74,7 +74,11 @@ To run the project locally, follow these steps:
 6. **Open your browser and navigate to:**
    ```bash
    http://localhost:3000
-   
-## Acknowledgements
 
-A huge thank you to **Jonas Schmedtmann** for the fantastic Udemy course that guided me through building this project. Your teaching has been invaluable in applying and expanding my skills!
+## Author
+
+Bal Moorthy:
+
+- [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/bal-moorthy/)
+
+Feel free to contact me with any questions or feedback!
