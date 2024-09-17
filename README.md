@@ -2,6 +2,9 @@
 
 Welcome to the Wild Oasis Hotel Booking Platform! This is a modern web application designed to help potential and current guests explore, reserve, and manage their stay at Wild Oasis Hotel. Built with a full stack of cutting-edge technologies, this app provides a seamless user experience for all your booking needs.
 
+[View Demo](https://the-wild-oasis-website-demo-72.vercel.app)
+
+
 ## 🚀 Features
 
 - **Explore the Hotel:**
