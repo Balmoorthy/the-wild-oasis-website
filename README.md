@@ -56,6 +56,8 @@ While building this project, I gained knowledge in the following areas:
 - **Cabin Filtering and Information**: Enabled guests to filter cabins by their maximum guest capacity and view important details, such as booked dates and cabin descriptions.
 - **Reservation System**: Built a system where guests can reserve cabins for specific date ranges, with reservations marked as "unconfirmed" until payment is made at the property upon arrival.
 - **Reservation Management**: Implemented features for guests to view all past and future reservations, as well as update or delete their reservations if needed.
+-  **Server-Side Rendering (SSR)**: Learned to render components on the server, improving SEO and initial load times by sending pre-rendered HTML to the client.
+- **Client-Side Rendering (CSR)**: Managed client-side rendering where components are rendered dynamically in the browser, enhancing interactivity and providing a single-page application experience.
 
 ## ⚙️ Future Updates
 
