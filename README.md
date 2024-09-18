@@ -42,6 +42,21 @@ Welcome to the Wild Oasis Hotel Booking Platform! This is a modern web applicati
 - **Database:**
   - [Supabase](https://supabase.com/)
 
+## What I Learned
+
+While building this project, I gained knowledge in the following areas:
+
+- **Next.js Routing**: Implemented dynamic and static routing for seamless navigation.
+- **User Interaction**: Managed user input and interactions using React hooks and state management.
+- **Login with Google Provider**: Integrated Google login functionality using NextAuth for OAuth authentication.
+- **NextAuth**: Utilized NextAuth for secure and flexible user authentication and session management.
+- **API Creation**: Developed APIs for handling user data, authentication, and more, using Next.js API routes.
+- **User Authentication and Authorization**: Implemented a sign-up and login system, ensuring guests must create an account and log in before making a reservation or performing any operations.
+- **Profile Management**: Developed a guest profile system where users can set and update personal information to streamline the check-in process.
+- **Cabin Filtering and Information**: Enabled guests to filter cabins by their maximum guest capacity and view important details, such as booked dates and cabin descriptions.
+- **Reservation System**: Built a system where guests can reserve cabins for specific date ranges, with reservations marked as "unconfirmed" until payment is made at the property upon arrival.
+- **Reservation Management**: Implemented features for guests to view all past and future reservations, as well as update or delete their reservations if needed.
+
 ## ⚙️ Future Updates
 
 In the near future, we plan to integrate an Express backend with MongoDB to enhance functionality and scalability.
