@@ -1,9 +1,9 @@
 "use server";
 
-import { revalidatePath } from "next/cache";
 import { auth, signIn, signOut } from "./auth";
-import { supabase } from "./supabase";
 import { getBookings } from "./data-service";
+import { supabase } from "./supabase";
+import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
 
 export async function updateGuest(formData) {
@@ -18,7 +18,7 @@ export async function updateGuest(formData) {
 
   const updateData = { nationality, countryFlag, nationalID };
 
-  const { error } = await supabase
+  const { data, error } = await supabase
     .from("guests")
     .update(updateData)
     .eq("id", session.user.guestId);
@@ -44,12 +44,7 @@ export async function createBooking(bookingData, formData) {
     status: "unconfirmed",
   };
 
-  console.log(newBooking);
-
-  const { error } = await supabase
-    .from("bookings")
-    .insert([newBooking])
-    .select();
+  const { error } = await supabase.from("bookings").insert([newBooking]);
 
   if (error) throw new Error("Booking could not be created");
 
@@ -66,7 +61,7 @@ export async function deleteBooking(bookingId) {
   const guestBookingIds = guestBookings.map((booking) => booking.id);
 
   if (!guestBookingIds.includes(bookingId))
-    throw new Error("You are not allowed to delete this bookings");
+    throw new Error("You are not allowed to delete this booking");
 
   const { error } = await supabase
     .from("bookings")
@@ -80,6 +75,7 @@ export async function deleteBooking(bookingId) {
 
 export async function updateBooking(formData) {
   const bookingId = Number(formData.get("bookingId"));
+
   // 1) Authentication
   const session = await auth();
   if (!session) throw new Error("You must be logged in");
@@ -89,7 +85,7 @@ export async function updateBooking(formData) {
   const guestBookingIds = guestBookings.map((booking) => booking.id);
 
   if (!guestBookingIds.includes(bookingId))
-    throw new Error("You are not allowed to update this bookings");
+    throw new Error("You are not allowed to update this booking");
 
   // 3) Building update data
   const updateData = {
@@ -106,9 +102,7 @@ export async function updateBooking(formData) {
     .single();
 
   // 5) Error handling
-  if (error) {
-    throw new Error("Booking could not be updated");
-  }
+  if (error) throw new Error("Booking could not be updated");
 
   // 6) Revalidation
   revalidatePath(`/account/reservations/edit/${bookingId}`);
